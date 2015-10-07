@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
 
@@ -7,6 +7,7 @@
     <title>Kilbupere Autosport™ Style Guide</title>
 
     <link href="css/main.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>    
 
   </head>
 
@@ -16,7 +17,6 @@
 
     <p>Kevin Yang 301112061 sya62@sfu.ca</p>
     <p>Alfred Chen 301100086 asc22@sfu.ca</p>
-    <p></p>
 
 
     <nav>
@@ -185,23 +185,225 @@
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
-
-
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
 
-      <!-- Main navigation styling section -->
       <section>
-        <h2>Main Navigation</h2>   
+        <h2>Main Navigation</h2>
+        <h3>CSS selector:</h3>
+        <p>#nav-header</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;nav id="nav-header"&gt;<br>
+          <span class="single-indent">&lt;div id="centered-nav-container"&gt;<br>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">&lt;div id="lower-nav-bar"&gt;<br>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">&lt;div id="lower-nav-bar-left"&gt;<br>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">
+                <span class="single-indent">&lt;ul&gt;<br>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">
+                <span class="single-indent">
+                  <span class="single-indent">
+                    &lt;li&gt;&lt;a class="button-nav" href="#"&gt;Browse&lt;/a&gt;&lt;/li&gt;<br>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">
+                <span class="single-indent">
+                  <span class="single-indent">&lt;li&gt;&lt;a class="button-nav" href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;<br>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">
+                <span class="single-indent">
+                  <span class="single-indent">&lt;li&gt;&lt;a class="button-nav" href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;<br>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">
+                <span class="single-indent">&lt;/ul&gt;<br>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">&lt;/div&gt; &lt;!-- ./lower-nav-bar-left --&gt;<br>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">&lt;div id="lower-nav-bar-right"&gt;<br>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">
+                <span class="single-indent">&lt;ul&gt;
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">
+                <span class="single-indent">
+                  <span class="single-indent"><br>
+                    &lt;form class="input-field"&gt;
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">
+                <span class="single-indent">
+                  <span class="single-indent">
+                    <span class="single-indent"><br>
+                      &lt;input type="text" placeholder="Search Here" id="form-searchbar"&gt;<br>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">
+                <span class="single-indent">
+                  <span class="single-indent">
+                    &lt;/form&gt;<br>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">
+                <span class="single-indent">&lt;/ul&gt;<br>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">
+              <span class="single-indent">&lt;/div&gt; &lt;!-- ./lower-nav-bar-right --&gt;<br>
+              </span>
+            </span>
+          </span>
+          <span class="single-indent">
+            <span class="single-indent">&lt;/div&gt; &lt;!-- ./lower-nav-bar --&gt;<br>
+            </span>
+          </span>
+          <span class="single-indent">&lt;/div&gt; &lt;!-- ./centered-nav-container --&gt;<br>
+          </span>
+          &lt;/nav&gt;
+        </code>
+
+      <h3>Rendered element:</h3>
+        <nav id="nav-header">
+          <div id="centered-nav-container">
+            <div id="lower-nav-bar">
+              <div id="lower-nav-bar-left">
+                <ul>
+                  <li><a class="button-nav" href="#">NA (89 - 97)</a></li>
+                  <li><a class="button-nav" href="#">NB (98 - 05)</a></li>
+                  <li><a class="button-nav" href="#">NC (06 - 14)</a></li>
+                  <li><a class="button-nav" href="#">ND (15+)</a></li>
+                </ul>
+              </div> <!-- ./lower-nav-bar-left -->
+              <div id="lower-nav-bar-right">
+                <form class="input-field">
+                  <input type="text" placeholder="Search Here" id="form-searchbar">
+                </form>
+              </div> <!-- ./lower-nav-bar-right -->
+            </div> <!-- ./lower-nav-bar -->
+          </div> <!-- ./centered-nav-container -->
+        </nav>  
       </section>
 
-      <!-- Product listing styling section -->
       <section>
         <h2>Product Listing</h2>
+        <h3>CSS selector:</h3>
+
+        <h3>Sample Code:</h3>
+        <code>
+          &lt;h2 class="section-header"&gt;Garage Vary Hardtop&lt;/h2&gt;<br>
+          &lt;h4 class="price-header"&gt;$2,299.99&lt;/h3&gt;<br>
+          &lt;div id="subsection-box"&gt;<br>
+          <span class="single-indent">
+            &lt;h3 class="subsection-header"&gt;Production Description&lt;/h3&gt;<br>
+          </span>
+          <span class="single-indent">
+            &lt;h3 class="subsection-header"&gt;Reviews&lt;/h3&gt;<br>
+          </span>
+          &lt;/div&gt;<br> 
+          &lt;p class="body-text"&gt;<br>
+          <span class="single-indent">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.<br>
+          </span>
+          &lt;/p&gt;<br>
+          &lt;div class="addcart"&gt;<br>
+          <span class="single-indent">
+            &lt;a class="button-submit" href="#"&gt;ADD TO CART&lt;/a&gt;<br>
+          </span>
+          &lt;/div&gt;<br>
+
+        </code>
+
+        <h3>Rendered element:</h3>
+        <h2 class="section-header">Garage Vary Hardtop</h2>
+        <h4 class="price-header">$2,299.99</h3>
+        <div id="subsection-box">
+          <h3 class="subsection-header">Product Description</h3>
+          <h3 class="subsection-header">Reviews</h3>
+        </div>
+        <br>
+        <p class="body-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+        </p>
+        <div class="addcart">
+        <a class="button-submit" href="#">ADD TO CART</a>
+      </div>
+
       </section>
 
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
+
 
   </body>
 </html>
