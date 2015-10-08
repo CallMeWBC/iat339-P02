@@ -1,7 +1,3 @@
-/* CSS for Kilbupere Autosport Style Guide*/
-/* Kevin Yang 301112061 */
-/* Alfred Chen 301100086 */
-
 body {
     font-family: 'Lato', sans-serif;
     padding: 2rem;
@@ -145,7 +141,7 @@ a {
     margin-right:5em;
 }
 
-/* Styling h4 headers */
+/* Stling h4 headers */
 .price-header{
     color:#990000;
     font-size:1.8rem;
