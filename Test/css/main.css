@@ -263,7 +263,13 @@ h2 {
 	text-decoration: none;
 }
 
+h3 {
+	color: #990000;
+}
 
+h4 {
+	color: #FFFFFF;
+}
 
 
 p, ul, ol {
