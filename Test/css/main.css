@@ -61,7 +61,6 @@
     padding: 0.4em;
     margin-right: 16em;
     float: right;
-
 }
 
 .message-bar {
@@ -150,6 +149,13 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    border-bottom: 1px solid #990000;
+    margin-bottom: -0.25rem;
+    text-decoration: none;
+}    
+}
+
 p {
     font-size: 1.2rem;
 
@@ -188,7 +194,7 @@ p {
 .input-field{
     display: inline-block;
     font-size: 1rem;
-    /* max-width: 15em; */
+    width: 5rem; 
     height: 2.4em;
     margin-left: 1em;
     padding: 0.3em 0.3em;
