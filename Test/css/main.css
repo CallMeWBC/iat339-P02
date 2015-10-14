@@ -58,10 +58,7 @@
     background-color: #333333;
     max-width: 100%;
     max-height: auto;
-    overflow: auto;
-    margin: 0;
-    padding: 0;
-
+    padding: 0.4em;
 }
 
 /*
@@ -166,7 +163,7 @@
 .input-field{
     display: inline-block;
     font-size: 1.25rem;
-    width: 15em;
+    max-width: 15em;
     height: 2em;
     margin-left: 1em;
     padding: 0.5em 0.5em;
