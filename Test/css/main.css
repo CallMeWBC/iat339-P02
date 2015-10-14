@@ -59,6 +59,7 @@
     max-width: 100%;
     max-height: auto;
     padding: 0.4em;
+    float: right;
 }
 
 /*
@@ -78,6 +79,11 @@
 		width: 25%;
 		margin-top: 3em;
 	}
+
+    .grid-col-3of8 {
+        background-color: #333333;
+        width: 37.5%;
+    }    
 
 }
 
@@ -129,6 +135,17 @@
 }
 
 
+a {
+    color: #990000;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.2rem;
+
+    color: #666666;
+}
+
 .button-nav {
     display: inline-block;     /* make the button inline, but preserve block properties such as margins */
     padding: 1em 7em;
@@ -148,8 +165,6 @@
     padding: 1.6em 7.6em;
     margin-left:0em;
     margin-right:0em;
-
-
 }
 
 /* search bar */
