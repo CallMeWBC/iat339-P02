@@ -52,6 +52,18 @@
 	clear: both;
 }
 
+.grid-search {
+    display: inline-block;
+    clear: both;
+    background-color: #333333;
+    max-width: 100%;
+    max-height: auto;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+
+}
+
 /*
 	Using further @media queries, we specify that at a width of
 	less than 30em it should collapse the 2/10 columns into one stack
@@ -61,6 +73,7 @@
 @media (min-width: 30em) {
 
 	.grid-col-1of8 {
+        background-color: #333333;
 		width: 12.5%;
 	}
 
@@ -143,11 +156,20 @@
 }
 
 /* search bar */
-.input-field{
+/*.input-field{
     display: inline-block;
     padding: 1.57em 7.6em;
     margin-left: 0em;
     margin-right:0em;
+}*/
+
+.input-field{
+    display: inline-block;
+    font-size: 1.25rem;
+    width: 15em;
+    height: 2em;
+    margin-left: 1em;
+    padding: 0.5em 0.5em;
 }
 
 
@@ -186,8 +208,8 @@
 
 .input-field input {
     font-size: 1.25rem;
-    width: 15em;
-    height: 1em;
+    max-width: 15em;
+    height: 1.5em;
     padding: 0.5em 0.5em;
 }
 
