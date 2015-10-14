@@ -56,10 +56,20 @@
     display: inline-block;
     clear: both;
     background-color: #333333;
-    max-width: 100%;
+    max-width: 5%;
     max-height: auto;
     padding: 0.4em;
+    margin-right: 16em;
     float: right;
+
+}
+
+.message-bar {
+    display:inline-block;
+    float: right;
+    margin-left: -1em;
+    margin-bottom: -0.05em;
+    margin-right: 8em;
 }
 
 /*
@@ -177,11 +187,13 @@ p {
 
 .input-field{
     display: inline-block;
-    font-size: 1.25rem;
-    max-width: 15em;
-    height: 2em;
+    font-size: 1rem;
+    /* max-width: 15em; */
+    height: 2.4em;
     margin-left: 1em;
-    padding: 0.5em 0.5em;
+    padding: 0.3em 0.3em;
+
+
 }
 
 
