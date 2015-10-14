@@ -156,10 +156,16 @@
 .product-image {
         display: inline-block;
     margin-top: 3em;
-    padding-top: 3em;
+
 
 }
 
+.product-box {
+    display:inline-block;
+    float:left;
+    text-align:left;
+    margin-top: 1em;
+}
 
 a {
     color: #990000;
@@ -289,7 +295,7 @@ p {
     font-size:1.8rem;
     float:left;
     display:inline-block;
-    margin-left: 3em;
+
 }
 
 /* Styling for paragraph text */
