@@ -97,6 +97,15 @@
 		width: 100%;
 	}
 
+	.grid-col-1of6 {
+		width: 16.66%;
+	}
+
+	.grid-col-3of6 {
+		width: 50%;
+		padding-left: 0.5em;
+	}
+
 }
 
 
@@ -215,6 +224,16 @@
     margin-right:30em;
 }
 
+.footer-box{
+	display:inline-block;
+	background-color: #333333;
+	color: #666666;
+	font-weight: lighter;
+	width:100%;
+	margin-top:10em;
+
+
+}
 .subsection-box{
     display:inline-block;
 }
