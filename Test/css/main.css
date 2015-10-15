@@ -56,10 +56,10 @@
     display: inline-block;
     clear: both;
     background-color: #333333;
-    max-width: 5%;
+/*    max-width: 5%;*/
     max-height: auto;
     padding: 0.4em;
-    margin-right: 16em;
+/*    margin-right: 16em;*/
     float: right;
 
 }
@@ -339,7 +339,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-size: 1em; 
 	color: black;
-	padding: 1em;
+/*	padding: 1em;*/
 }
 
 
