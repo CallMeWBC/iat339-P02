@@ -61,6 +61,7 @@
     padding: 0.4em;
     margin-right: 16em;
     float: right;
+
 }
 
 .message-bar {
@@ -68,7 +69,7 @@
     float: right;
     margin-left: -1em;
     margin-bottom: -0.05em;
-    margin-right: 8em;
+    margin-right:8em;
 }
 
 /*
@@ -94,6 +95,15 @@
         width: 37.5%;
     }    
 
+    .grid-col-3of8image {
+        background-color: #FFFFFF;
+        width: 37.5%;
+    }
+
+    .grid-col-5of8 {
+        width: 50%;
+        margin-left: 3em;   
+    }
 }
 
 
@@ -143,6 +153,19 @@
 
 }
 
+.product-image {
+        display: inline-block;
+    margin-top: 3em;
+
+
+}
+
+.product-box {
+    display:inline-block;
+    float:left;
+    text-align:left;
+    margin-top: 1em;
+}
 
 a {
     color: #990000;
@@ -193,10 +216,12 @@ p {
 .input-field{
     display: inline-block;
     font-size: 1rem;
-    width: 5em; 
+    /* max-width: 15em; */
     height: 2.4em;
-    margin-left: 0em;
+    margin-left: 1em;
     padding: 0.3em 0.3em;
+
+
 }
 
 
@@ -258,6 +283,7 @@ p {
     font-size: 1.75rem;
     font-family: 'Lato', 700;
     text-decoration:none;
+    display:inline-block;
 }
 
 /* Styling h3 headers */
@@ -273,6 +299,9 @@ p {
 .price-header{
     color:#990000;
     font-size:1.8rem;
+    float:left;
+    display:inline-block;
+
 }
 
 /* Styling for paragraph text */
