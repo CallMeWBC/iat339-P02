@@ -1,48 +1,182 @@
+@font-face {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: normal;
+        src: url('fonts/Lato-Regular.ttf');
+        src: url('fonts/Lato-Black.ttf') 
+                format('truetype'), 
+            url('fonts/Lato-BlackItalic.ttf')
+                format('truetype'),
+            url('fonts/Lato-Bold.ttf')
+                format('truetype'),
+            url('fonts/Lato-BoldItalic.ttf')
+                format('truetype'),
+            url('fonts/Lato-Hairline.ttf')
+                format('truetype'), 
+            url('fonts/Lato-HairlineItalic.ttf')
+                format('truetype'),
+            url('fonts/Lato-Italic.ttf')
+                format('truetype'),
+            url('fonts/Lato-Light.ttf')
+                format('truetype'),
+            url('fonts/Lato-LightItalic.ttf')
+                format('truetype'),
+            url('fonts/Lato-Regular.ttf')
+                format('truetype');
+}
+
+/* GRID */
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+[class^='grid-col-'] {
+	float: left;
+	text-align: center; /* center the content in this block by default */
+}
+
+.grid-col-5of10, .grid-col-1of8, .grid-col-2of8, .grid-col-1of10, .grid-col-1of4 {
+	width: 100%;
+}
+
 /*
- *  Default styling for the style guide. The media queries are included in here as well, rather
- *  than in a separate file, due to issues with the order of where the css is executed.
- */
-
-
-body {
-    font-family: 'Lato', sans-serif;
-    padding: 2rem;
-    font-size: 16px;
+	Here we are clearing floated items to ensure that
+	our 'grid' structure can have different rows
+*/
+.grid-row:after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
-section:not([id]) {
-    margin: 1em 0;
-    padding: 0.5em 0;
-    border-top: 1px solid #333;
+.grid-search {
+    display: inline-block;
+    clear: both;
+    background-color: #333333;
+    max-width: 5%;
+    max-height: auto;
+    padding: 0.4em;
+    margin-right: 16em;
+    float: right;
+
 }
 
-section h3 {
-    margin-bottom: 0;
-}
-
-section p {
-    margin-top: 0;
-}
-
-section code {
-    background-color: #EEE;
-    padding: 0.5em 0.75em;
-    display: block;
+.message-bar {
+    display:inline-block;
+    float: right;
+    margin-left: -1em;
+    margin-bottom: -0.05em;
+    margin-right:8em;
 }
 
 /*
- *  Indents one line of the code block. I'm using a span instead of a div to indent an entire block
- *  because a div isn't allowed in a code block.
- */
-section code span.single-indent {
-    padding-left: 1.5em;
+	Using further @media queries, we specify that at a width of
+	less than 30em it should collapse the 2/10 columns into one stack
+
+	Think of this as saying, when display width > 30em, apply this
+*/
+@media (min-width: 30em) {
+
+	.grid-col-1of8 {
+        background-color: #333333;
+		width: 12.5%;
+	}
+
+	.grid-col-2of8 {
+		width: 25%;
+		margin-top: 3em;
+	}
+
+    .grid-col-3of8 {
+        background-color: #333333;
+        width: 37.5%;
+    }    
+
+    .grid-col-3of8image {
+        background-color: #FFFFFF;
+        width: 37.5%;
+    }
+
+    .grid-col-5of8 {
+        width: 50%;
+        margin-left: 3em;   
+    }
 }
 
-/* Style links in this document to be consistent with the style guide format */
+
+/*
+	Here using @media queries, we are specifying when the display
+	has a width less than 50em it should collapse the 5/10 columns 
+	into one stack (hence width: 100%)
+
+	Think of this as saying, when display width > 50em, apply this
+*/
+@media (min-width: 50em) {
+
+	.grid-col-5of10 {
+		width: 50%;
+	}
+
+	.grid-col-5of10:first-of-type {
+		padding-right: 0.5em;
+	}
+
+	.grid-col-5of10:last-of-type {
+		padding-left: 0.5em;
+	}
+
+	.grid-col-10of10 {
+		width: 100%;
+	}
+
+	.grid-col-1of6 {
+		width: 16.66%;
+	}
+
+	.grid-col-3of6 {
+		width: 50%;
+		padding-left: 0.5em;
+	}
+
+	.grid-col-1of10{
+		width: 10%;
+		float:right;
+		display:inline-block;
+	}
+
+	.grid-col-1of4{
+		width: 25%;
+	}
+
+}
+
+.product-image {
+        display: inline-block;
+    margin-top: 3em;
+
+
+}
+
+.product-box {
+    display:inline-block;
+    float:left;
+    text-align:left;
+    margin-top: 1em;
+}
+
 a {
     color: #990000;
     text-decoration: none;
 }
+
+a:hover {
+    border-bottom: 1px solid #990000;
+    margin-bottom: -0.25rem;
+    text-decoration: none;
+}    
 
 p {
     font-size: 1.2rem;
@@ -50,45 +184,52 @@ p {
     color: #666666;
 }
 
-
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
-
-/* Styling for the navigation button */
 .button-nav {
-    display: inline-block;      /* make the button inline, but preserve block properties such as margins */
-    padding: 0.5em 1.5em;
+    display: inline-block;     /* make the button inline, but preserve block properties such as margins */
+    padding: 1em 7em;
+    margin-left:0;
+    margin-right:0;
     color: #FFFFFF; 
     background-color: #333333; /* a dark gray, almost black colour */
-    font-size: 1.25rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: normal;
     text-decoration: none;      /* no underline */
 }
 
-/* Reduce horizontal button padding */
-@media (max-width: 60rem) {
-    .button-nav {
-        padding: 0.5em 0.5em;
-    }
+/* space between the ND button and the search bar */
+.nav-bar{
+	display:inline-block;
+    background-color: #333333;
+    padding: 1.6em 7.6em;
+    margin-left:0em;
+    margin-right:0em;
 }
 
-/* Reduce to thinner weight of font */
-@media (max-width: 40rem) {
-    .button-nav {
-        font-family: 'Lato', sans-serif;
-    }
+/* search bar */
+/*.input-field{
+    display: inline-block;
+    padding: 1.57em 7.6em;
+    margin-left: 0em;
+    margin-right:0em;
+}*/
+
+.input-field{
+    display: inline-block;
+    font-size: 1rem;
+    /* max-width: 15em; */
+    height: 2.4em;
+    margin-left: 1em;
+    padding: 0.3em 0.3em;
+
+
 }
 
-/* Visual feedback on mouse hover over button */
+
 .button-nav:hover, .button-submit:hover, .button-reset:hover{
     background-color: #990000;  
     /* a shade of red that is used throughout the website */
 }
 
-
-
-/* Styling for in-text link. By default, it has no underline. */
 .in-text-link, .in-text-link:visited, .in-text-link:active {
     color: #990000;
     font-size: 1.2rem;
@@ -104,7 +245,6 @@ p {
     text-decoration: none;
 }
 
-
 /* Submit and Reset button styling */
 .button-submit, .button-submit:active, 
 .button-reset, .button-reset:active {
@@ -119,9 +259,9 @@ p {
 
 
 .input-field input {
-    font-size: 1rem;
-    width: 15em;
-    height: 2em;
+    font-size: 1.25rem;
+    max-width: 15em;
+    height: 1.5em;
     padding: 0.5em 0.5em;
 }
 
@@ -134,14 +274,16 @@ p {
     color: #333333;
     font-size: 2.25rem;
     margin-bottom: 0.25em;
+    text-decoration:none;
 }
 
 /* Styling for h2 headers */
 .section-header {
     color: #333333;
     font-size: 1.75rem;
-    display:inline-block;
     font-family: 'Lato', 700;
+    text-decoration:none;
+    display:inline-block;
 }
 
 /* Styling h3 headers */
@@ -156,19 +298,36 @@ p {
 /* Stling h4 headers */
 .price-header{
     color:#990000;
-    display:inline-block;
     font-size:1.8rem;
-    margin-left:5em;
+    float:left;
+    display:inline-block;
+
 }
 
 /* Styling for paragraph text */
 .body-text {
+    font-size: 1.2rem;
     line-height: 120%;
+    color: #666666;
     margin-right:30em;
 }
 
+.footer-box{
+	display:inline-block;
+	background-color: #333333;
+	color: #666666;
+	font-weight: lighter;
+	width:100%;
+	margin-top:10em;
+
+
+}
 .subsection-box{
-    display:inline-block;
+	display:inline-block;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 .addcart{
@@ -176,127 +335,63 @@ p {
     margin-left:23em;
 }
 
-/* Styling for bulleted and ordered lists - not for all unordered lists or ordered lists,
- * respectively */
-.bulleted-list, .numbered-list {
-    /*font-family: franklin_gothic_fsbook, sans-serif;*/
-    font-size: 1.25rem;
-    color: #333333;
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em; 
+	color: black;
+	padding: 1em;
 }
 
 
-/* 
-  COMBINED ELEMENTS -------------------
-*/
-
-/* Part 1: Main navigation */
-
-/* Container for header navigation menu, which is centered and has padding on both sides for
-   whitespace */
-#centered-nav-container {
-    padding-left: 12%;
-    padding-right: 12%;
-    background-color: #333333;
+h1 {
+	font-size: 2.5rem; 
 }
 
-/* Reduce the padding */
-@media (max-width: 80rem) {
-    #centered-nav-container {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+
+h2 {
+	font-weight: normal;
+	font-size: 2rem; 
+	margin-top: 2rem;
+	text-decoration: none;
 }
 
-/* Finally, eliminate the padding */
-@media (max-width: 50rem) {
-    #centered-nav-container {
-        padding-left: 0;
-        padding-right: 0;
-    }
+h3 {
+	color: #990000;
 }
 
-/* Lower-nav-bar indicates it is the lower section of the header bar, where the main navigation
-   links are */
-#lower-nav-bar {
-    clear: both;
-    background-color: #333333;
-    max-width: 100%;
-    overflow: auto;
-    margin: 0;
-    padding: 0;
+h4 {
+	color: #FFFFFF;
 }
 
-/* Remove the bullets and margin/padding from the nav list */
-#lower-nav-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 
+p, ul, ol {
+	font-size: 1rem;
+	line-height: 1.3em; 
+	text-align: left;
 }
 
-/* Left Navi Side*/
-#lower-nav-bar-left ul li {
-    float: left;
+
+img {
+	height: auto; 
+	width: auto;
+	max-width: 100%;
+	border: 1px solid #888888; 
 }
 
-/* Right Navi SIde */
-#lower-nav-bar-right {
-    float: right;
- }
 
-/* Collapse the right-hand menu options into a second row */
-@media (max-width: 35rem) {
-    #lower-nav-bar-right {
-        clear: both;
-        float: left;
-    }
+figure {
+	margin: 0;
 }
 
-/* After floating to the right, this sets the order of the menu items in the correct order */
-#lower-nav-bar-right ul li {
-    float: left;
+
+figcaption {
+	font-size: 0.8rem;
+	font-style: italic;
 }
 
 
 
-/*
-    With this selector, we are specifying that all objects use
-    the border-box model (not the content-box model)
-*/
-*, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
 
-/*
-    Here we are using a 'fancy' css selector that is 
-    specifying if the class of an item starts with
-    'grid-col-', then we should apply the styling listed
-*/
-[class^='grid-col-'] {
-    float: left;
-    padding: 0; 
-    text-align: center; /* center the content in this block by default */
-}
 
 
-/*
-    Here we are defining our default column widths with the intention
-    of keeping it 'mobile first'
-*/
-.grid-col-5of10, .grid-col-2of10 {
-    width: 33%;
-}
-
-
-/*
-    Here we are clearing floated items to ensure that
-    our 'grid' structure can have different rows
-*/
-.grid-row:after {
-    content: "";
-    display: block;
-    clear: both;
-}

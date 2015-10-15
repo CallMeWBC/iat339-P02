@@ -301,7 +301,7 @@ p {
     font-size:1.8rem;
     float:left;
     display:inline-block;
-
+    margin-left: 1em;
 }
 
 /* Styling for paragraph text */
