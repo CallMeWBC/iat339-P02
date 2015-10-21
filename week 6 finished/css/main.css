@@ -295,13 +295,13 @@ p {
     margin-right:5em;
 }
 
-/* Stling h4 headers */
+/* Styling h4 headers */
 .price-header{
     color:#990000;
     font-size:1.8rem;
-    float:left;
-    display:inline-block;
+    display: inline-block;
     margin-left: 1em;
+    margin-right: 1em;
 }
 
 /* Styling for paragraph text */
