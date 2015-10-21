@@ -47,6 +47,7 @@
 	our 'grid' structure can have different rows
 */
 .grid-row:after {
+    padding-top: 1em;
 	content: "";
 	display: block;
 	clear: both;
@@ -149,12 +150,35 @@
 
 	.grid-col-1of4{
 		width: 25%;
+        display:inline-block;
 	}
 
+    .grid-col-3of4{
+        width: 75%;
+        float:left;
+    }
+
+    .grid-col-3of5{
+        width: 60%;
+        float:left;
+    }
+
+
+    .grid-col-4of5{
+        width: 80%;
+        float:left;
+    }
+    .grid-col-1of5{
+        width: 20%;
+    }    
+    .grid-col-2of5{
+        width: 40%;
+        float:right;
+    }       
 }
 
 .product-image {
-        display: inline-block;
+    display: inline-block;
     margin-top: 3em;
 
 
@@ -220,9 +244,8 @@ p {
     height: 2.4em;
     margin-left: 1em;
     padding: 0.3em 0.3em;
-
-
 }
+
 
 
 .button-nav:hover, .button-submit:hover, .button-reset:hover{
@@ -266,6 +289,12 @@ p {
     padding: 0.5em 0.5em;
 }
 
+.input-field-name input {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem; 
+    max-width: 15em;
+    height: 1.5em;
+}
 
 /* 
   TEXT ELEMENTS -------------------
@@ -286,6 +315,7 @@ p {
     text-decoration:none;
     display:inline-block;
 }
+
 
 /* Styling h3 headers */
 .subsection-header {
@@ -323,6 +353,13 @@ p {
     line-height: 120%;
     color: #858585;
     margin-right:30em;
+}
+
+.cart-text {
+    color: #2E2E2E;
+    font-size: 1.2rem;
+    text-align: right;
+    margin-right: 10em;
 }
 
 .footer-box{
@@ -363,6 +400,8 @@ textarea {
     min-height: 7.5rem;
     width: 100%;
 }
+
+
 
 body {
 	font-family: 'Lato', sans-serif;
