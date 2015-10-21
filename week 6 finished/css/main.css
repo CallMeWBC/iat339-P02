@@ -303,6 +303,20 @@ p {
     display: inline-block;
 }
 
+/* Styling review headers */
+.review-header{
+    color:#990000;
+    font-size:1.2rem;
+    display: inline-block;
+}
+
+/* Styling review headers */
+.review-header-date{
+    color:#858585;
+    font-size:1.1rem;
+    display: inline-block;
+}
+
 /* Styling for paragraph text */
 .body-text {
     font-size: 1.2rem;
@@ -340,6 +354,16 @@ p {
     float:right;
 }
 
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem; 
+    min-height: 7.5rem;
+    width: 100%;
+}
+
 body {
 	font-family: 'Lato', sans-serif;
 	font-size: 1em; 
@@ -375,6 +399,9 @@ p, ul, ol {
 	text-align: left;
 }
 
+p.review {
+    color: #000000;
+}
 
 img {
 	height: auto; 
