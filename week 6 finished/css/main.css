@@ -335,9 +335,10 @@ p {
 
 /* Styling review headers */
 .review-header{
-    color:#990000;
-    font-size:1.2rem;
+    color:#000000;
+    font-size:1.3rem;
     display: inline-block;
+
 }
 
 /* Styling review headers */
