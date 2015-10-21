@@ -1,0 +1,397 @@
+@font-face {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: normal;
+        src: url('fonts/Lato-Regular.ttf');
+        src: url('fonts/Lato-Black.ttf') 
+                format('truetype'), 
+            url('fonts/Lato-BlackItalic.ttf')
+                format('truetype'),
+            url('fonts/Lato-Bold.ttf')
+                format('truetype'),
+            url('fonts/Lato-BoldItalic.ttf')
+                format('truetype'),
+            url('fonts/Lato-Hairline.ttf')
+                format('truetype'), 
+            url('fonts/Lato-HairlineItalic.ttf')
+                format('truetype'),
+            url('fonts/Lato-Italic.ttf')
+                format('truetype'),
+            url('fonts/Lato-Light.ttf')
+                format('truetype'),
+            url('fonts/Lato-LightItalic.ttf')
+                format('truetype'),
+            url('fonts/Lato-Regular.ttf')
+                format('truetype');
+}
+
+/* GRID */
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+[class^='grid-col-'] {
+	float: left;
+	text-align: center; /* center the content in this block by default */
+}
+
+.grid-col-5of10, .grid-col-1of8, .grid-col-2of8, .grid-col-1of10, .grid-col-1of4 {
+	width: 100%;
+}
+
+/*
+	Here we are clearing floated items to ensure that
+	our 'grid' structure can have different rows
+*/
+.grid-row:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.grid-search {
+    display: inline-block;
+    clear: both;
+    background-color: #333333;
+/*    max-width: 5%;*/
+    max-height: auto;
+    padding: 0.4em;
+/*    margin-right: 16em;*/
+    float: right;
+
+}
+
+.message-bar {
+    display:inline-block;
+    float: right;
+    margin-left: -1em;
+    margin-bottom: -0.05em;
+    margin-right:8em;
+}
+
+/*
+	Using further @media queries, we specify that at a width of
+	less than 30em it should collapse the 2/10 columns into one stack
+
+	Think of this as saying, when display width > 30em, apply this
+*/
+@media (min-width: 30em) {
+
+	.grid-col-1of8 {
+        background-color: #333333;
+		width: 12.5%;
+	}
+
+	.grid-col-2of8 {
+		width: 25%;
+		margin-top: 3em;
+	}
+
+    .grid-col-3of8 {
+        background-color: #333333;
+        width: 37.5%;
+    }    
+
+    .grid-col-3of8image {
+        background-color: #FFFFFF;
+        width: 37.5%;
+    }
+
+    .grid-col-5of8 {
+        width: 50%;
+        margin-left: 3em;   
+    }
+}
+
+
+/*
+	Here using @media queries, we are specifying when the display
+	has a width less than 50em it should collapse the 5/10 columns 
+	into one stack (hence width: 100%)
+
+	Think of this as saying, when display width > 50em, apply this
+*/
+@media (min-width: 50em) {
+
+	.grid-col-5of10 {
+		width: 50%;
+	}
+
+	.grid-col-5of10:first-of-type {
+		padding-right: 0.5em;
+	}
+
+	.grid-col-5of10:last-of-type {
+		padding-left: 0.5em;
+	}
+
+	.grid-col-10of10 {
+		width: 100%;
+	}
+
+	.grid-col-1of6 {
+		width: 16.66%;
+	}
+
+	.grid-col-3of6 {
+		width: 50%;
+		padding-left: 0.5em;
+	}
+
+	.grid-col-1of10{
+		width: 10%;
+		float:right;
+		display:inline-block;
+	}
+
+	.grid-col-1of4{
+		width: 25%;
+	}
+
+}
+
+.product-image {
+        display: inline-block;
+    margin-top: 3em;
+
+
+}
+
+.product-box {
+    display:inline-block;
+    float:left;
+    text-align:left;
+    margin-top: 1em;
+}
+
+a {
+    color: #990000;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #990000;
+    margin-bottom: -0.25rem;
+    text-decoration: none;
+}    
+
+p {
+    font-size: 1.2rem;
+
+    color: #666666;
+}
+
+.button-nav {
+    display: inline-block;     /* make the button inline, but preserve block properties such as margins */
+    padding: 1em 7em;
+    margin-left:0;
+    margin-right:0;
+    color: #FFFFFF; 
+    background-color: #333333; /* a dark gray, almost black colour */
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;      /* no underline */
+}
+
+/* space between the ND button and the search bar */
+.nav-bar{
+	display:inline-block;
+    background-color: #333333;
+    padding: 1.6em 7.6em;
+    margin-left:0em;
+    margin-right:0em;
+}
+
+/* search bar */
+/*.input-field{
+    display: inline-block;
+    padding: 1.57em 7.6em;
+    margin-left: 0em;
+    margin-right:0em;
+}*/
+
+.input-field{
+    display: inline-block;
+    font-size: 1rem;
+    /* max-width: 15em; */
+    height: 2.4em;
+    margin-left: 1em;
+    padding: 0.3em 0.3em;
+
+
+}
+
+
+.button-nav:hover, .button-submit:hover, .button-reset:hover{
+    background-color: #990000;  
+    /* a shade of red that is used throughout the website */
+}
+
+.in-text-link, .in-text-link:visited, .in-text-link:active {
+    color: #990000;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Visual feedback for mouse hover over links */
+.in-text-link:hover {
+    border-bottom: 1px solid #990000;
+    margin-bottom: -0.25rem;
+    text-decoration: none;
+}
+
+/* Submit and Reset button styling */
+.button-submit, .button-submit:active, 
+.button-reset, .button-reset:active {
+    display: inline-block;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 0.75em 2.5em;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+
+
+.input-field input {
+    font-size: 1.25rem;
+    max-width: 15em;
+    height: 1.5em;
+    padding: 0.5em 0.5em;
+}
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+/* Styling for h1 headers */
+.main-header {
+    color: #333333;
+    font-size: 2.25rem;
+    margin-bottom: 0.25em;
+    text-decoration:none;
+}
+
+/* Styling for h2 headers */
+.section-header {
+    color: #333333;
+    font-size: 1.75rem;
+    font-family: 'Lato', 700;
+    text-decoration:none;
+    display:inline-block;
+}
+
+/* Styling h3 headers */
+.subsection-header {
+    color: #333333;
+    font-size: 1.3rem;
+    font-weight:lighter;
+    display:inline-block;
+    margin-right:5em;
+}
+
+/* Stling h4 headers */
+.price-header{
+    color:#990000;
+    font-size:1.8rem;
+    float:left;
+    display:inline-block;
+    margin-left: 1em;
+}
+
+/* Styling for paragraph text */
+.body-text {
+    font-size: 1.2rem;
+    line-height: 120%;
+    color: #666666;
+    margin-right:30em;
+}
+
+.footer-box{
+	display:inline-block;
+	background-color: #333333;
+	color: #666666;
+	font-weight: lighter;
+	width:100%;
+	margin-top:10em;
+
+
+}
+.subsection-box{
+	display:inline-block;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.addcart{
+    display:inline-block;
+    margin-left:23em;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em; 
+	color: black;
+/*	padding: 1em;*/
+}
+
+
+h1 {
+	font-size: 2.5rem; 
+}
+
+
+h2 {
+	font-weight: normal;
+	font-size: 2rem; 
+	margin-top: 2rem;
+	text-decoration: none;
+}
+
+h3 {
+	color: #990000;
+}
+
+h4 {
+	color: #FFFFFF;
+}
+
+
+p, ul, ol {
+	font-size: 1rem;
+	line-height: 1.3em; 
+	text-align: left;
+}
+
+
+img {
+	height: auto; 
+	width: auto;
+	max-width: 100%;
+	border: 1px solid #888888; 
+}
+
+
+figure {
+	margin: 0;
+}
+
+
+figcaption {
+	font-size: 0.8rem;
+	font-style: italic;
+}
+
+
+
+
+
+
+
