@@ -465,3 +465,84 @@ figcaption {
 	font-size: 0.8rem;
 	font-style: italic;
 }
+
+
+/*
+hamburger menu stuff
+*/
+
+[class*='col-'] {
+    float: left;
+    padding: 0; 
+    text-align: center; 
+}
+
+
+.col-1of8 {
+    width: 12.5%;
+}
+
+.col-1of4 {
+    width: 25%;    
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+Responsive menu according to viewport width
+*/
+@media (max-width: 63em) {
+
+    .col-1of8 {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 57em) {
+
+    .col-1of4 {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 32em) {
+
+    .col-1of8 {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 22em) {
+
+    .col-1of8 {
+        width: 100%;
+    }
+
+}
+
+.nav-toggle {
+    background-color: black;
+    display: block;
+}
+
+
+/*
+    Here we hide use .hidden and .shown to enable classes to show and hide our .nav-toggle
+*/
+.nav-toggle.hidden {
+    visibility: hidden;
+    position: absolute; 
+}
+
+.nav-toggle.shown {
+    visibility: visible;
+    position: relative;
+}
