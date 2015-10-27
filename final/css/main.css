@@ -87,7 +87,7 @@
 	}
 
 	.grid-col-2of8 {
-		width: 25%;
+		width: 50%;
 		margin-top: 3em;
 	}
 
@@ -120,6 +120,11 @@
 	.grid-col-5of10 {
 		width: 50%;
 	}
+
+    .grid-col-2of8 {
+        width: 25%;
+        margin-top: 3em;
+    }
 
 	.grid-col-5of10:first-of-type {
 		padding-right: 0.5em;
