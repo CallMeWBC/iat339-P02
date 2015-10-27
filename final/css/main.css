@@ -500,9 +500,13 @@ hamburger menu stuff
 /*
 Responsive menu according to viewport width
 */
-@media (max-width: 63em) {
+@media (max-width: 66em) {
 
     .col-1of8 {
+        width: 25%;
+    }
+
+    .col-1of4 {
         width: 50%;
     }
 
@@ -511,7 +515,11 @@ Responsive menu according to viewport width
 @media (max-width: 57em) {
 
     .col-1of4 {
-        width: 100%;
+        width: 50%;
+    }
+
+    .col-1of8 {
+        width: 25%;
     }
 
 }
@@ -522,6 +530,10 @@ Responsive menu according to viewport width
     .col-1of8 {
         width: 50%;
     }
+
+    .col-1of4 {
+        width: 100%;
+    }    
 
 }
 
