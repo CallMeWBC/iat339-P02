@@ -82,7 +82,7 @@
 .grid-row:after {
     padding-top: 1em;
 	content: "";
-	display: block;
+	display: inline-block;
 	clear: both;
 }
 
