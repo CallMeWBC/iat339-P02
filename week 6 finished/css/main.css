@@ -670,4 +670,8 @@ Responsive menu according to viewport width
         width: 100%;
     }
 
+    .col-1of4 {
+        width: 0%;
+    }
+
 }
