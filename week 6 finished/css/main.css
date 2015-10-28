@@ -655,7 +655,7 @@ Responsive menu according to viewport width
 @media (max-width: 32em) {
 
     .col-1of8 {
-        width: 50%;
+        width: 100%;
     }
 
     .col-1of4 {
