@@ -277,7 +277,7 @@ p {
 
 .button-nav {
     display: inline-block;     /* make the button inline, but preserve block properties such as margins */
-    padding: 1em 7em;
+    padding: 1em 2.35em;
     margin-left:0;
     margin-right:0;
     color: #FFFFFF; 
