@@ -3,7 +3,7 @@
         font-style: normal;
         font-weight: normal;
         src: url('fonts/Lato-Regular.ttf');
-        src: url('fonts/Lato-Black.ttf') 
+        /* src: url('fonts/Lato-Black.ttf') 
                 format('truetype'), 
             url('fonts/Lato-BlackItalic.ttf')
                 format('truetype'),
@@ -22,7 +22,40 @@
             url('fonts/Lato-LightItalic.ttf')
                 format('truetype'),
             url('fonts/Lato-Regular.ttf')
-                format('truetype');
+                format('truetype'); */
+}
+
+@font-face {
+        font-family: "Lato-Bold";
+        font-style: normal;
+        font-weight: normal;
+        src: url('fonts/Lato-Bold.ttf')
+                format('truetype')
+}
+
+@font-face {
+        font-family: "Lato-Black";
+        font-style: normal;
+        font-weight: normal;
+        src: url('fonts/Lato-Black.ttf') 
+                format('truetype')
+}
+
+@font-face {
+        font-family: "Lato-Light";
+        font-style: normal;
+        font-weight: normal;
+        src: url('fonts/Lato-Light.ttf')
+                format('truetype'),
+}
+
+@font-face {
+        font-family: "Lato-Hairline";
+        font-style: normal;
+        font-weight: normal;
+        src: url('fonts/Lato-Hairline.ttf')
+                format('truetype'), 
+
 }
 
 /* GRID */
@@ -119,27 +152,33 @@
 
 	.grid-col-5of10 {
 		width: 50%;
+        display: inline-block;
 	}
 
 	.grid-col-5of10:first-of-type {
 		padding-right: 0.5em;
+        display: inline-block;
 	}
 
 	.grid-col-5of10:last-of-type {
 		padding-left: 0.5em;
+        display: inline-block;
 	}
 
 	.grid-col-10of10 {
 		width: 100%;
+        display: inline-block;
 	}
 
 	.grid-col-1of6 {
 		width: 16.66%;
+        display: inline-block;
 	}
 
 	.grid-col-3of6 {
 		width: 50%;
 		padding-left: 0.5em;
+        display: inline-block;
 	}
 
 	.grid-col-1of10{
@@ -156,24 +195,29 @@
     .grid-col-3of4{
         width: 75%;
         float:left;
+        display: inline-block;
     }
 
     .grid-col-3of5{
         width: 60%;
         float:left;
+        display: inline-block;
     }
 
 
     .grid-col-4of5{
         width: 80%;
         float:left;
+        display: inline-block;
     }
     .grid-col-1of5{
         width: 20%;
+        display: inline-block;
     }    
     .grid-col-2of5{
         width: 40%;
         float:right;
+        display: inline-block;
     }       
 }
 
