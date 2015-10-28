@@ -151,6 +151,9 @@
         width: 50%;
         margin-left: 3em;   
     }
+
+
+
 }
 
 
@@ -257,93 +260,17 @@
     }       
 }
 
-/*
-hamburger menu stuff
-*/
-
-[class*='col-'] {
-    float: left;
-    padding: 0; 
-    text-align: center; 
+/* cart grid */
+.cart-col-1of3 {
+    width: 33%;
+    margin-left: 3em;   
 }
 
-
-.col-1of8 {
-    width: 12.5%;
+.cart-col-3of6 {
+    width: 50%;
+    margin-left: 3em;   
+    display: inline-block;
 }
-
-.col-1of4 {
-    width: 25%;    
-}
-
-
-/*
-Responsive menu according to viewport width
-*/
-@media (max-width: 66em) {
-
-    .col-1of8 {
-        width: 25%;
-    }
-
-    .col-1of4 {
-        width: 50%;
-    }
-
-}
-
-@media (max-width: 57em) {
-
-    .col-1of4 {
-        width: 50%;
-    }
-
-    .col-1of8 {
-        width: 25%;
-    }
-
-}
-
-
-@media (max-width: 32em) {
-
-    .grid-col-1of8 {
-        width: 50%;
-    }
-
-    .grid-col-3of8 {
-        width: 100%;
-    }    
-
-}
-
-@media (max-width: 22em) {
-
-    .col-1of8 {
-        width: 100%;
-    }
-
-}
-
-.nav-toggle {
-    background-color: black;
-    display: block;
-}
-
-
-/*
-    Here we hide use .hidden and .shown to enable classes to show and hide our .nav-toggle
-*/
-.nav-toggle.hidden {
-    visibility: hidden;
-    position: absolute; 
-}
-
-.nav-toggle.shown {
-    visibility: visible;
-    position: relative;
-}
-
 
 .product-image {
     display: inline-block;
