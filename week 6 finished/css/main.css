@@ -266,8 +266,8 @@
     margin-left: 3em;   
 }
 
-.cart-col-3of6 {
-    width: 50%;
+.cart-col-14of25 {
+    width: 56%;
     margin-left: 3em;   
     display: inline-block;
 }
@@ -621,9 +621,8 @@ hamburger menu stuff
 }
 
 /*
-Responsive menu according to viewport width
+Responsive nav-bar according to viewport width
 */
-
 
 
 @media (max-width: 66em) {
