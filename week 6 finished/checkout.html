@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cart - Maxim Works Header</title>
+    <title>Check Out</title>
     <link rel="stylesheet" href="css/main.css">
 
     
@@ -82,41 +82,56 @@
 
     </header>
 
-    <div class="grid-row">
-      <div class="grid-col-1of4"> 
-        <h3 class="subsection-header">Shopping Cart</h2>
-      </div>
-    </div>  
+
 
     <div class="grid-row">
-
-      <div class="cart-col-1of3"> 
+      <div class="grid-col-5of8"> 
         <article class="product-box">
+        <h2 class="section-header">Shipping Address</h2>
         <div class="desc-box">
-            <a href="product.html" class="img-link"><img src="img/maximworks_mini.jpg"> </a>
+          <form class="input-field-name">
+            <input type="text" placeholder="Recipient Name">
+          </form>
+          <form class="input-field-name">
+            <input type="text" placeholder="Address Line 1">
+          </form>
+          <form class="input-field-name">
+            <input type="text" placeholder="Address Line 2">
+          </form>
+          <form class="input-field-name">
+            <input type="text" placeholder="City & Province/State">
+          </form>
+          <form class="input-field-name">
+            <input type="text" placeholder="Postal Code">
+          </form>
+          <form class="input-field-name">
+            <input type="text" placeholder="Country">
+          </form>          
         </div>
+
         </article>
       </div> 
 
-      <div class="cart-col1of3">
+      <div class="grid-col5of8">
         <div class="product-box">
-          <h3 class="subsection-header">Maxim Works Header</h3> 
+        <h2 class="section-header">Shipping Options</h2>
+        <div class="desc-box">
+          <form>     
+            <input type="radio" name="shipping" value="Fedex Ground" checked> $25.79 Fedex Ground (2-5 days)  <br>
+            <input type="radio" name="shipping" value="Fedex Air"> $33.79 Fedex Air (1-3 days) <br>     
+            <input type="radio" name="shipping" value="Canada Post"> $18.20 Canada Post (3-10 days)  
+          </form>    
+        </div>
         </div>
       </div>
-
-      <div class="cart-col1of3">
-        <div class="product-box">
-          <h3 class="price-header">$889.99</h3>  
-        </div>     
-      </div>
-    </div> 
 
     <div class="grid-row">
 
       <div class="cart-col-3of6"> 
         <article class="product-box">
         <div class="desc-box">
-          <h3 class="subsection-header">Price before shipping & handling:</h3> 
+          <h3 class="subsection-header">Comments:</h3>
+          <textarea></textarea>  
         </div>
         </article>
       </div> 
@@ -130,16 +145,14 @@
       <div class="cart-col1of3">
         <div class="product-box">
           <div class="desc-box">
-            <p class="cart-text">Sub total: $889.99</p>
-            <p class="cart-text">Tax: 12.5%</p>
-            <p class="cart-text">Total: $1001.24</p>
-            <a class="button-submit" href="checkout.html">CHECK OUT</a>
+            <a class="button-submit" href="checkoutdone.html">PLACE ORDER</a>
           </div>  
         </div>   
       </div>
     </div> 
 
 
+    </div> 
 
     <div class="grid-row">
       <div class="footer-box">
