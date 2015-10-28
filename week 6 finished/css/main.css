@@ -412,7 +412,31 @@ p {
     padding: 0.3em 0.3em;
 }
 
+.login-field{
+    display: inline-block;
+    float: left;
+    margin-top: -1em;
 
+}
+
+.form-login{
+    display: inline-block;
+    width:56em;
+    height: 2.4em;
+}
+
+.login-text{
+    display:inline-block;
+    float: left;
+}
+
+.loginbutton-box{
+    display:inline-block;
+    float: right;
+    margin-top: 1em;
+    margin-bottom: -1em;
+
+}
 
 .button-nav:hover, .button-submit:hover, .button-reset:hover{
     background-color: #990000;  
