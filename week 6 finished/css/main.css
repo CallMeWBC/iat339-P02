@@ -464,14 +464,16 @@ p {
     color:#000000;
     font-size:1.3rem;
     display: inline-block;
+    clear:both;
 
 }
 
 /* Styling review headers */
 .review-header-date{
     color:#858585;
-    font-size:1.1rem;
+    font-size:1rem;
     display: inline-block;
+    margin-left: 1em;
 }
 
 /* Styling for paragraph text */
