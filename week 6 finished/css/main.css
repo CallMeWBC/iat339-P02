@@ -262,11 +262,32 @@
 
 /* cart grid */
 .cart-col-1of3 {
-    width: 33%;
-    margin-left: 3em;   
+    display:inline-block;
+    width: 10%;
+
+}
+
+.cart-col-productheader{
+    display:inline-block;
+    width:46%;
+    margin-left:3em;
+}
+
+.cart-col-productname{
+    display:inline-block;
+    width:30%;
+    margin-left: 3em;
+    float:right;
+}
+
+.cart-col-productimg{
+    display:inline-block;
+    width:10%;
+    margin-left: 3em;
 }
 
 .cart-col-3of6 {
+    display:inline-block;
     width: 50%;
     margin-left: 3em;   
 }
@@ -363,6 +384,17 @@ p {
     display: inline-block;
     width:30em;
     height: 2.4em;
+}
+
+.form-itemquantity{
+    display:inline-block;
+    width:1em;
+    height: 3em;
+}
+
+.input-quantity{
+    display:inline-block;
+    margin: 2em;
 }
 
 .login-text{
@@ -563,6 +595,7 @@ h3 {
 
 h4 {
 	color: #FFFFFF;
+    font-family: "Lato-Bold";
 }
 
 
